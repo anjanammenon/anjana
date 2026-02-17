@@ -1,0 +1,133 @@
+{
+  "regions": {
+    "China": {
+      "databases": [
+        "ApsaraDB RDS",
+        "PolarDB"
+      ],
+      "clouds": [
+        "Alibaba",
+        "ecloud"
+      ]
+    },
+    "Hongkong": {
+      "databases": [
+        "ApsaraDB RDS",
+        "PolarDB"
+      ],
+      "clouds": [
+        "Alibaba",
+        "ecloud"
+      ]
+    },
+    "US": {
+      "databases": [
+        "Postgres",
+        "MongoDB",
+        "Oracle"
+      ],
+      "clouds": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    "UK": {
+      "databases": [
+        "Postgres",
+        "MongoDB",
+        "Oracle"
+      ],
+      "clouds": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    "Middle East": {
+      "databases": [
+        "Postgres",
+        "MongoDB",
+        "Oracle"
+      ],
+      "clouds": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    "Australia": {
+      "databases": [
+        "Postgres",
+        "MongoDB",
+        "Oracle"
+      ],
+      "clouds": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    "Mexico": {
+      "databases": [
+        "Postgres",
+        "MongoDB",
+        "Oracle"
+      ],
+      "clouds": [
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    }
+  },
+  "business": {
+    "Internal": {
+      "allowed_databases": [
+        "Postgres",
+        "MongoDB"
+      ]
+    },
+    "Customer facing": {
+      "allowed_databases": [
+        "Oracle"
+      ]
+    },
+    "Finance": {
+      "allowed_databases": [
+        "Oracle"
+      ]
+    }
+  },
+  "tier": {
+    "0": {
+      "allowed_databases": [
+        "ApsaraDB RDS",
+        "Oracle"
+      ]
+    },
+    "1": {
+      "allowed_databases": [
+        "PolarDB",
+        "Postgres"
+      ]
+    },
+    "2": {
+      "allowed_databases": [
+        "PolarDB",
+        "Postgres"
+      ]
+    }
+  },
+  "purpose": {
+    "New": {
+      "allowed_clouds": [
+        "Alibaba",
+        "AWS"
+      ]
+    },
+    "Expansion": {
+      "allowed_clouds": "ALL"
+    }
+  }
+}
