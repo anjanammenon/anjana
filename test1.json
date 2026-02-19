@@ -1,0 +1,82 @@
+{
+    "REGION_UK": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+    ],
+    "REGION_US": [
+        {
+            "compute": "windows",
+            "version": "1"
+        },
+        {
+            "database": "mongo",
+            "version": "1"
+        }
+    ],
+    "BUSINESS_INTERNAL": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+    ],
+    "BUSINESS_FINANCE": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+    ],
+        "BUSINESS_FINANCE": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+    ],    
+    "TIER_0": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+    ],
+    "TIER_1": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+    ],
+     "TIER_2": [
+        {
+            "compute": "linux",
+            "version": "1"
+        },
+        {
+            "database": "oracle",
+            "version": "1"
+        }
+     ]
+}
