@@ -1,0 +1,164 @@
+{
+  "policies": [
+    {
+      "id": "REGION_US",
+      "when": { "region": "US" },
+      "allow": {
+        "compute": ["linux", "windows", "bigdata"],
+        "databases": ["oracle", "sql", "mongodb", "postgres"],
+        "middleware": ["apache", "tomcat", "nodejs", "java", "hazelcast"],
+        "internal": ["esx", "storagearrays"],
+        "clouds": ["aws", "azure", "gcp"]
+      }
+    },
+
+    {
+      "id": "REGION_CHINA",
+      "when": { "region": "China" },
+      "allow": {
+        "compute": ["linux"],
+        "databases": ["polardb", "apasarards"],
+        "middleware": ["apache", "mq", "ibmwebsphere", "mqipt"],
+        "internal": ["internalcloud"],
+        "clouds": ["alibabacloud"]
+      }
+    },
+
+    {
+      "id": "REGION_HK",
+      "when": { "region": "HK" },
+      "allow": {
+        "compute": ["linux"],
+        "databases": ["polardb", "apasarards"],
+        "middleware": ["apache", "mq", "ibmwebsphere", "mqipt"],
+        "internal": ["internalcloud"],
+        "clouds": ["alibabacloud"]
+      }
+    },
+
+    {
+      "id": "REGION_QA",
+      "when": { "region": "QA" },
+      "allow": {
+        "compute": ["linux", "windows"],
+        "databases": ["oracle", "postgres", "mongodb", "db2"],
+        "middleware": ["apache", "tomcat", "java", "liberty"],
+        "internal": ["esx", "storagearrays"],
+        "clouds": [ "azure"]
+      }
+    },
+    {
+      "id": "REGION_UK",
+      "when": { "region": "UK" },
+      "allow": {
+        "compute": ["linux", "windows"],
+        "databases": ["oracle", "postgres", "mongodb", "db2"],
+        "middleware": ["apache", "tomcat", "java", "liberty"],
+        "internal": ["internalcloud","ikp"],
+        "clouds": ["aws", "azure", "gcp"]
+      }
+    },
+
+    {
+      "id": "BUSINESS_FINANCE",
+      "when": { "business": "Finance" },
+      "allow": {
+        "databases": ["oracle", "polardb","postgres"],
+        "middleware": ["apache"],
+        "compute": ["linux"],
+        "internal": ["internalcloud"],
+        "clouds": [ "azure","aws","gcp","alibabacloud"]
+      }
+    },
+
+    {
+      "id": "BUSINESS_INTERNAL",
+      "when": { "business": "Internal" },
+      "allow": {
+        "databases": ["postgres", "apasarards"],
+        "middleware": ["apache"],
+        "compute": ["linux"],
+        "internal": ["internalcloud"],
+        "clouds": [ "azure","aws","gcp","alibabacloud"]
+      }
+    },
+
+    {
+      "id": "BUSINESS_CUSTOMER",
+      "when": { "business": "Customer facing" },
+      "allow": {
+        "databases": ["sql", "apasarards"],
+        "middleware": ["apache"],
+        "compute": ["linux"],
+        "internal": ["ikp"],
+        "clouds": [ "azure","aws","gcp","alibabacloud"]
+      }
+    },
+
+
+    {
+      "id": "TIER_0",
+      "when": { "tier": "0" },
+      "allow": {
+        "databases": ["oracle", "polardb","postgres"],
+        "middleware": ["apache"],
+        "compute": ["linux"],
+        "internal": ["internalcloud"],
+        "clouds": [ "azure","aws","gcp","alibabacloud"]
+      }
+    },
+
+    {
+      "id": "TIER_1",
+      "when": { "tier": "1" },
+      "allow": {
+        "databases": ["sql", "apasarards"],
+        "middleware": ["apache"],
+        "compute": ["linux"],
+        "internal": ["ikp"],
+        "clouds": [ "azure","aws","gcp","alibabacloud"]
+      }
+    },
+
+    {
+      "id": "TIER_2",
+      "when": { "tier": "2" },
+      "allow": {
+        "databases": ["postgres", "apasarards"],
+        "middleware": ["apache"],
+        "compute": ["linux"],
+        "internal": ["internalcloud"],
+        "clouds": [ "azure","aws","gcp","alibabacloud"]
+      }
+    },
+
+
+    {
+      "id": "PURPOSE_NEW",
+      "when": { "purpose": "New" },
+      "allow": {
+        "compute": ["linux", "windows", "bigdata"],
+        "databases": ["postgres", "apasarards", "sql", "mongodb", "db2", "polardb"],
+        "middleware": ["java", "apache", "tomcat", "nodejs", "ibmwebsphere", "mq", "mqipt", "liberty", "hazelcast"],
+        "clouds": ["aws", "alibabacloud", "azure" ],
+        "internal": ["internalcloud"]
+
+      }
+    },
+
+    {
+      "id": "PURPOSE_EXPANSION",
+      "when": { "purpose": "Expansion" },
+      "allow": {
+        "compute": ["linux", "windows", "bigdata"],
+        "databases": ["postgres", "apasarards", "oracle", "sql", "mongodb", "db2", "polardb"],
+        "middleware": ["java", "apache", "tomcat", "nodejs", "ibmwebsphere", "mq", "mqipt", "liberty", "hazelcast"],
+        "clouds": ["aws", "alibabacloud", "azure", "gcp" ],
+        "internal": ["internalcloud"]
+
+      }
+    }
+
+
+  ]
+}
